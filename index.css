@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font style */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    text-align: center; /* Center text */
+    background-color: white; /* White background for the container */
+    padding: 40px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    font-size: 2.5em; /* Large font size for the heading */
+    color: #333; /* Dark gray color */
+}
+
+p {
+    font-size: 1.2em; /* Medium font size for the paragraph */
+    color: #666; /* Medium gray color */
+}
+
+.countdown {
+    margin-top: 20px; /* Space above the countdown */
+}
+
+.time {
+    font-size: 2em; /* Large font size for the countdown numbers */
+    color: #007BFF; /* Blue color for the countdown */
+}
