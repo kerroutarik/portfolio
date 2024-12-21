@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: scaleUp 4s ease-in-out infinite alternate;
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+.cantainer{
+  background-color: #f9f9f9;
+
+}
+/* Keyframe Animation for Image Scaling */
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

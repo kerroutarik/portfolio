@@ -1,0 +1,150 @@
+/* General Card Styling */
+.flex-1 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tag Styling */
+.tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 9999px;
+}
+
+/* Random Colors for Tags */
+.tag:nth-child(1) { background-color: #34d399; }
+.tag:nth-child(2) { background-color: #60a5fa; }
+.tag:nth-child(3) { background-color: #fbbf24; }
+.tag:nth-child(4) { background-color: #f87171; }
+.tag:nth-child(5) { background-color: #a78bfa; }
+.tag:nth-child(6) { background-color: #22d3ee; }
+.tag:nth-child(7) { background-color: #fb7185; }
+.tag:nth-child(8) { background-color: #6ee7b7; }
+.tag:nth-child(9) { background-color: #c084fc; }
+.tag:nth-child(10) { background-color: #facc15; }
+.tag:nth-child(11) { background-color: #4ade80; }
+.tag:nth-child(12) { background-color: #2dd4bf; }
+.tag:nth-child(13) { background-color: #818cf8; }
+.tag:nth-child(14) { background-color: #d946ef; }
+.tag:nth-child(15) { background-color: #3b82f6; }
+.tag:nth-child(16) { background-color: #f43f5e; }
+
+/* Card Title and Description Styling */
+.text-2xl {
+  font-size: 1.5rem;
+}
+.text-gray-800 {
+  color: #2d3748;
+}
+.text-gray-600 {
+  color: #718096;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Profile Card Styling */
+.max-w-xs {
+  max-width: 400px;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #4fd1c5, #3b82f6);
+}
+
+.rounded-lg {
+  border-radius: 8px;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Navbar container */
+.navbar {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e5e7eb; /* Light border for separation */
+}
+
+/* Logo */
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Navigation links */
+.nav-links a {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #2563eb; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* "Hire Me" button */
+.nav-links .bg-yellow-400 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-links .bg-yellow-400:hover {
+  background-color: #f59e0b; /* Darker yellow */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
+
+/* CV Download Section */
+.cv-download {
+  background: linear-gradient(135deg, #f3f4f6, #ffffff); /* Subtle gradient */
+  border: 1px solid #e5e7eb; /* Light gray border for definition */
+  border-radius: 1rem; /* Smooth rounded corners */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.cv-download:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+}
+
+/* Download Link */
+.cv-download a {
+  font-size: 1.125rem; /* Slightly larger font */
+  font-weight: 600; /* Bold font for emphasis */
+  text-decoration: underline;
+  color: #2563eb; /* Vibrant blue */
+}
+
+.cv-download a:hover {
+  color: #1d4ed8; /* Slightly darker blue */
+  text-decoration: none; /* Removes underline on hover */
+}
+
+/* Dropdown */
+.cv-download select {
+  padding: 0.5rem 1rem; /* Comfortable padding */
+  font-size: 1rem; /* Readable font size */
+  background-color: #ffffff; /* Clean white background */
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 2rem; /* Full rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.cv-download select:focus {
+  border-color: #2563eb; /* Blue border on focus */
+  box-shadow: 0 0 4px #2563eb; /* Glowing effect on focus */
+  outline: none; /* Remove default outline */
+}

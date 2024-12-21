@@ -1,0 +1,31 @@
+/* Social Media Icons Container with Blue Border */
+.social-icons-container {
+  background-color: white; /* White background */
+  border: 2px solid #3498db; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Padding inside the rectangle */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for the rectangle */
+}
+.sid{
+  top:20px;
+}
+/* Social Icons Container Styling */
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+/* Icon Style */
+.icon {
+  font-size: 30px; /* Icon size */
+  color: #b5391d;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Animation for Icons */
+.icon:hover {
+  transform: translateY(-5px); /* Upward movement on hover */
+  color: #3498db; /* Change color to blue */
+}

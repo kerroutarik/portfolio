@@ -1,0 +1,227 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.cantainer{
+  background-color: #f9f9f9;
+
+}
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: scaleUp 4s ease-in-out infinite alternate;
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+/* Keyframe Animation for Image Scaling */
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.description {
+  margin-top: 20px;
+  padding: 20px 30px;
+  max-width: 1200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ffffff;
+  background: linear-gradient(135deg, #e4c8ae, #8c8887);
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  text-align: center;
+}
+
+.description p {
+  margin: 0;
+  font-weight: 500;
+}
+
+
+
+.description p span {
+  font-weight: bold;
+  color: #4c8cce;
+}
+
+
+.certifications-header {
+  text-align: center;
+  padding: 20px;
+  margin-top:40px;
+  background: linear-gradient(135deg, #cfd2d5, #434445);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certifications-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.certifications-header p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #f9f9f9;
+}
+.certification-container {
+  background: linear-gradient(135deg, #eef2f3, #1b1e23);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 450px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.certification-header {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.certification-header h3 {
+  font-size: 20px;
+  color: #004080;
+  margin: 0;
+}
+
+.certification-header p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+.certification-content h4 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #004080;
+}
+
+.certification-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certification-content ul li {
+  background: #b5391d;
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgb(140, 136, 135);
+}
+
+.details-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.details-button:hover {
+  background: #1ad1d1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Wrapper for the entire certifications section */
+.certifications-wrapper {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Header of the certifications section */
+.certifications-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.certifications-header h3 {
+  font-size: 2em;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+/* List of all certifications */
+.certifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Each certification item */
+.certification-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for each certification item */
+.certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title inside each certification item */
+.certification-title h4 {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Image inside each certification item */
+.certification-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.certification-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,148 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: scaleUp 4s ease-in-out infinite alternate;
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+}
+
+/* Keyframe Animation for Image Scaling */
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.education-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: #e67e22;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.timeline-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: #fef9e7;
+}
+
+.degree {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.institution {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 14px;
+  color: #95a5a6;
+  font-style: italic;
+}
+
+.details {
+  font-size: 16px;
+  color: #636e72;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-marker {
+    margin-bottom: 10px;
+  }
+
+  .timeline-content {
+    text-align: left;
+  }
+}
+
+
+.cantainer{
+  background-color: #f9f9f9;
+
+}

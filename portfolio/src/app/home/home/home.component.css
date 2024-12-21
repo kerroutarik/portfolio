@@ -1,0 +1,68 @@
+.card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+.tree-container{
+  margin-top:90px;
+}
+.fixed-card {
+  width: 200px;
+}
+
+.left-card {
+  float: left;
+  left: 10px;
+}
+
+.right-card {
+  float: right;
+}
+
+.center-card {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.fixed {
+  position: fixed;
+
+  z-index: 1000;
+}
+
+.fixed.left-card {
+  left: 10px;
+  top: 200px;
+}
+
+.fixed.right-card {
+  right: 10px;
+  top: 0;
+}
+.cursor-trace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  pointer-events: none; /* Prevent the trace from interfering with user interactions */
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 0.5s linear infinite;
+}
+
+/* Fade-out Effect for Trace */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }}
+html {
+  scroll-behavior: smooth;
+}

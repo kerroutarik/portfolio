@@ -1,0 +1,74 @@
+.navbar {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e5e7eb; /* Light border for separation */
+}
+
+/* Logo */
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* Navigation links */
+.nav-links a {
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #2563eb; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* "Hire Me" button */
+.nav-links .bg-yellow-400 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-links .bg-yellow-400:hover {
+  background-color: #f59e0b; /* Darker yellow */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
+
+/* CV Download Section */
+.cv-download {
+  background: linear-gradient(135deg, #f3f4f6, #ffffff); /* Subtle gradient */
+  border: 1px solid #e5e7eb; /* Light gray border for definition */
+  border-radius: 1rem; /* Smooth rounded corners */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.cv-download:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+}
+
+/* Download Link */
+.cv-download a {
+  font-size: 1.125rem; /* Slightly larger font */
+  font-weight: 600; /* Bold font for emphasis */
+  text-decoration: underline;
+  color: #2563eb; /* Vibrant blue */
+}
+
+.cv-download a:hover {
+  color: #1d4ed8; /* Slightly darker blue */
+  text-decoration: none; /* Removes underline on hover */
+}
+
+/* Dropdown */
+.cv-download select {
+  padding: 0.5rem 1rem; /* Comfortable padding */
+  font-size: 1rem; /* Readable font size */
+  background-color: #ffffff; /* Clean white background */
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 2rem; /* Full rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.cv-download select:focus {
+  border-color: #2563eb; /* Blue border on focus */
+  box-shadow: 0 0 4px #2563eb; /* Glowing effect on focus */
+  outline: none; /* Remove default outline */
+}

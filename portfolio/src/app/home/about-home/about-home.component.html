@@ -1,0 +1,33 @@
+<div class="cantainer">
+  <div class="header">
+    <div class="image">
+      <img src="/assets/title-header.png" alt="header">
+    </div>
+  </div>
+  <div class="content">
+    <div class="about-container">
+      <div class="about-header">
+        <p class="intro">Hello! My name is Tarik, and I'm a passionate and versatile Full-Stack Developer from Tinghir, Morocco. Currently, I reside in Marrakech. I speak four languages: Amazigh, Arabic, French, and English, which allows me to connect with a wide range of people and collaborate effectively across different cultures.</p>
+
+        <p class="hobbies">In addition to my love for technology, I enjoy several hobbies that help me maintain a balanced lifestyle. Web design is one of my passions, where I get to combine creativity with technical skills to craft beautiful, functional websites. I also have a deep love for football and have competed successfully in various athletic competitions. My athletic journey includes time with two clubs, RAJA Tinghir Club and Ait Yihya Club, where I achieved significant success in school competitions.</p>
+
+        <p class="leisure">When I’m not coding or practicing sports, I enjoy hitting the gym and exploring new places through travel.</p>
+
+        <p class="services">I’m a Full-Stack Developer with expertise in creating robust and scalable solutions using a wide range of technologies. I have a strong affinity for Java, Python, and Angular, but I’m equally adept at working with other programming languages and frameworks. I offer services across the software development lifecycle, including:</p>
+      </div>
+
+      <div class="services">
+        <div class="service-card" *ngFor="let service of services">
+          <div class="icon">
+            <i [class]="service.icon"></i>
+          </div>
+          <div class="service-info">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

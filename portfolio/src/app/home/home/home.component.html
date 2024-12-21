@@ -1,0 +1,36 @@
+<div class="flex flex-col min-h-screen">
+  <app-navbar id="navbar"></app-navbar>
+  <div class="tree-container">
+    <div id="leftSidebar" class="left-card">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="center-card">
+      <section #about id="about">
+        <app-about-home></app-about-home>
+      </section>
+      <section #education id="education">
+        <app-formation-home></app-formation-home>
+      </section>
+      <section #certification id="certification">
+        <app-certification-home></app-certification-home>
+      </section>
+      <section #experience id="experience">
+        <app-experience-home></app-experience-home>
+      </section>
+      <section #skills id="skills">
+        <app-skills-home></app-skills-home>
+      </section>
+      <section #projects id="projects">
+        <app-project-home></app-project-home>
+      </section>
+      <section #contact id="contact">
+        <app-contact-home></app-contact-home>
+      </section>
+
+  </div>
+    <div id="rightSidebar" class="right-card">
+      <app-table-of-contents (navigate)="scrollToSection($event)"></app-table-of-contents>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

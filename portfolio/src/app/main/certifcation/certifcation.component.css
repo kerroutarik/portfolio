@@ -1,0 +1,226 @@
+/* Container for the certification card */
+.certification-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the certification card */
+.certification-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styling */
+.certification-header h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.certification-header p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* Content container styling */
+.certification-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left column (What I learned and Skills gained) */
+.left-column {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.left-column h4 {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.left-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.left-column ul li {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+/* Right column (Image) */
+.right-column {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Adding hover effect to the certification image */
+.certification-image {
+  width: 100%;
+  max-width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-image:hover {
+  transform: scale(2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the certification card background */
+.certification-container {
+  background: #f9f9f9;
+  border-left: 5px solid #2980b9;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive design: Stack columns on small screens */
+@media (max-width: 768px) {
+  .certification-content {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* Wrapper for the entire certifications section */
+.certifications-wrapper {
+  background: linear-gradient(145deg, #f0f3f7, #e0e5ec);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section styling */
+.certifications-header {
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #3f51b5, #5c6bc0);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title text styling */
+.certifications-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient effect for the title text */
+.title-gradient {
+  background: linear-gradient(90deg, #ff9800, #f44336);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Icon animation (optional) */
+.certifications-title span {
+  position: relative;
+}
+
+.certifications-title span:before {
+  content: '⚽';
+  position: absolute;
+  left: -30px;
+  font-size: 2.5rem;
+  animation: bounce 2s infinite;
+}
+
+.certifications-title span:after {
+  content: '🏆';
+  position: absolute;
+  right: -30px;
+  font-size: 2.5rem;
+  animation: bounce 2s infinite alternate;
+}
+
+/* Bouncing animation for the icons */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certification-item {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certification-item:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.certification-title {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Stylish gradient */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: #ffffff; /* White text for contrast */
+  text-align: center; /* Center-align content */
+  max-width: 600px;
+  margin: 20px auto; /* Center the block horizontally */
+}
+
+.certification-title h4 {
+  font-family: 'Georgia', serif; /* Elegant font for the title */
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Makes the title stand out */
+  letter-spacing: 1px; /* Adds a polished feel */
+}
+
+.certification-description {
+  font-family: 'Arial', sans-serif; /* Clean font for the description */
+  font-size: 1rem;
+  line-height: 1.6; /* Better readability */
+  color: #f0f0f0; /* Slightly lighter color for the description */
+}
+
+
+.certification-image img {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-left: 20px;
+}

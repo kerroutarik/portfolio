@@ -1,0 +1,65 @@
+:host {
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Sidebar container */
+.sidebarRight {
+  display: block;
+  align-items: flex-start;
+  background-color: #34495e; /* Dark background for the sidebar */
+  padding: 10px;
+  margin-top: 70px;
+  margin-left: -20px;
+  margin-right: 10px;
+  width: 50px; /* Fixed width for the sidebar */
+  height: 80vh; /* Full viewport height */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  top: 0px;
+  left: 0;
+
+  transition: width 0.3s ease;
+}
+
+/* Styling for each section item */
+.section-item {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white; /* Text color */
+  margin: 30px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.section-item i {
+  font-size: 24px; /* Icon size */
+  transition: transform 0.3s ease;
+}
+
+.item-title {
+  display: none; /* Hide title by default */
+  font-size: 12px;
+  margin-top: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.sidebarRight:hover {
+  width: 100px; /* Expand width when hovered */
+}
+
+.sidebarRight:hover .section-item .item-title {
+  display: block; /* Show title on hover */
+}
+
+.section-item:hover {
+  background-color: #3498db; /* Blue background on hover */
+  transform: translateX(10px); /* Slight movement for hover effect */
+}
+
+.section-item:hover i {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}

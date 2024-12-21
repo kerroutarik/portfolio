@@ -1,0 +1,407 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-header-ab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.experience-details h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.experience-details p {
+  font-size: 14px;
+  color: #777;
+}
+
+.experience-content {
+  background: linear-gradient(135deg, #f1f3f5, #d1d8e0);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-content:hover {
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.experience-content h3 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 10px;
+}
+
+.details-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details-content li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.details-content li:hover {
+  color: #4a90e2;
+}
+
+.details-content li .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #4a90e2;
+}
+
+.details-content li span {
+  font-weight: bold;
+  color: #333;
+}
+
+.details-content li:hover .icon {
+  color: #ff4e5b;
+}
+
+@media (max-width: 768px) {
+  .experience-content {
+    padding: 30px;
+    max-width: 95%;
+  }
+
+  .experience-content h3 {
+    font-size: 24px;
+  }
+
+  .details-content li {
+    font-size: 14px;
+  }
+}
+
+.skills-pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+/* Skills Description Section */
+.skills-description {
+  background: linear-gradient(135deg, #f8f9fa, #e0e7ff);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-description:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.skills-description h4 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.skills-description p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.skills-description p:hover {
+  color: #4a90e2;
+}
+
+.skills-description p::before {
+  content: '⚡';
+  font-size: 18px;
+  margin-right: 10px;
+  color: #ff4e5b;
+}
+
+.skills-description p span {
+  font-weight: bold;
+  color: #4a90e2;
+  transition: color 0.3s ease;
+}
+
+.skills-description p span:hover {
+  color: #ff4e5b;
+}
+
+@media (max-width: 768px) {
+  .skills-description {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .skills-description h4 {
+    font-size: 20px;
+  }
+
+  .skills-description p {
+    font-size: 14px;
+  }
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.experience-container {
+  animation: fadeIn 1s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .experience-header-ab {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-pipeline {
+    flex-direction: column;
+  }
+
+  .skill {
+    margin-bottom: 10px;
+  }
+}
+/* Container for the diagram */
+.architecture-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #ffffff, #f2f2f2);
+}
+
+/* Header Styling */
+.architecture-container h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Styling for components and layout */
+.components {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.component {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border-radius: 20px;
+  width: 200px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.component:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.circle span {
+  color: #3498db;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.component p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* Arrow Styling */
+.arrows {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #3498db;
+  margin-top: -30px;
+  animation: moveArrow 1.5s ease-in-out infinite;
+}
+
+.arrow-1 {
+  animation-delay: 0.5s;
+}
+
+.arrow-2 {
+  animation-delay: 1s;
+}
+
+.arrow-3 {
+  animation-delay: 1.5s;
+}
+
+.arrow-4 {
+  animation-delay: 2s;
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Styling for small devices */
+@media (max-width: 768px) {
+  .components {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .component {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .arrows {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/* Special gradient background for component connections */
+.frontend {
+  background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
+
+.backend {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.microservices {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.database {
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+}
+
+.collaboration {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+.security{
+  background: linear-gradient(135deg, #e74c3c, #ba7033);
+
+}
+.ci-cd{
+  background: linear-gradient(135deg, #246aae, #8c8581);
+
+}
